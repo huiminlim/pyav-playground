@@ -20,4 +20,7 @@ pip install cython==0.29.37
 # ffmpeg path: C:\Users\user\miniconda3\envs\pyav-playground\Library
 python setup.py build --ffmpeg-dir=C:\Users\user\miniconda3\envs\pyav-playground\Library\bin
 python setup.py install --ffmpeg-dir=C:\Users\user\miniconda3\envs\pyav-playground\Library\bin
+
+# Install additional good to have dependencies
+pip install klvdata opencv-python
 ```
