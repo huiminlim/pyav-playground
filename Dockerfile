@@ -12,6 +12,6 @@ RUN pip3 install cython==0.29.37
 RUN python3 PyAV/setup.py build
 RUN python3 PyAV/setup.py install
 RUN pip3 install klvdata opencv-python
-RUN export PYTHONPATH=/usr/local/lib/python3.10/dist-packages
+ENV PYTHONPATH /usr/local/lib/python3.10/dist-packages
 ENV NVIDIA_VISIBLE_DEVICES all
 ENV NVIDIA_DRIVER_CAPABILITIES compute,utility
