@@ -1,5 +1,5 @@
 # docker build -t pyavplayground pyav-playground/ && docker image prune -f
-# docker run -it pyavplayground /bin/bash
+# docker run -it --rm pyavplayground /bin/bash
 FROM ubuntu:latest
 WORKDIR /data
 COPY . /data
