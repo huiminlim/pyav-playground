@@ -18,8 +18,10 @@ print(in_stream.streams.data)
 out_stream = av.open(OUTPUT_FILE, "w", format='mpegts')
 out_stream.add_stream("hevc_nvenc")
 data_stream_idx = out_stream.add_stream(template=in_stream.streams.data[0])
-dec_codec_ctx = av.Codec('h264_cuvid', 'r').create()
-enc_codec_ctx = av.Codec('hevc_nvenc', 'w').create()
+#dec_codec_ctx = av.Codec('h264_cuvid', 'r').create()
+#enc_codec_ctx = av.Codec('hevc_nvenc', 'w').create()
+dec_codec_ctx = av.Codec('h264', 'r').create()
+enc_codec_ctx = av.Codec('libx265', 'w').create()
 enc_codec_ctx.pix_fmt = "yuv420p"
 enc_codec_ctx.width = 1920
 enc_codec_ctx.height = 1080
