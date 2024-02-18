@@ -2,6 +2,12 @@
 
 ## Environments
 
+### Docker
+
+Use the Dockerfile to create a docker image and container to run.
+
+### Conda
+
 ```bash
 # ffmpeg 4.4.2 needed as 6.0.0+ has broken api wrt pyav
 # https://github.com/obsproject/obs-studio/issues/8375
