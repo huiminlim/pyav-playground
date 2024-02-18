@@ -16,4 +16,4 @@ RUN pip3 install klvdata opencv-python
 ENV PYTHONPATH /usr/local/lib/python3.10/dist-packages
 ENV NVIDIA_VISIBLE_DEVICES all
 ENV NVIDIA_DRIVER_CAPABILITIES compute,utility
-ENTRYPOINT ["python3 data/PyAV/setup.py install"]
+#ENTRYPOINT ["python3 data/PyAV/setup.py install"]
